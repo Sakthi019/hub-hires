@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    background-color: #EEEEEE;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p-column-title {
+    font-family: Inter;
+    font-weight: 600 !important;
+    line-height: 0px !important;
+    font-size: 14px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.p-button {
+    border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.p-button:focus {
+    border: none;
+    box-shadow: none !important;
 }
 
-.App-link {
-  color: #61dafb;
+.pi-fw {
+    color: #7B2CBF !important;
+    font-size: 25px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.p-datatable-thead tr th {
+    background-color: #7B2CBF !important;
+    color: white !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.p-sortable-column-icon {
+    color: white !important;
+}
+
+.p-datatable-thead tr {
+    background: gray !important;
+}
+
+.p-datatable .p-datatable-tbody>tr>td {
+    font-family: inter;
+    font-size: 14px !important;
+}
+
+.p-datatable-scrollable>.p-datatable-wrapper::-webkit-scrollbar {
+    display: none !important;
+}
+
+.p-card-body {
+    padding: 0% !important;
+}
+
+.p-card-content {
+    padding: 0% !important;
+}
+
+.outer-card {
+    .list-card {
+        width: 80% !important;
+        padding: 0% !important;
+        margin: 0 auto !important;
+
+        .p-datatable .p-datatable-tbody>tr>td {
+            padding: 0rem 1rem !important;
+        }
+    }
+}
+.fullview {
+    .list-card {
+        /* width: 80% !important; */
+        padding: 0% !important;
+        margin: 0 auto !important;
+
+        .p-datatable .p-datatable-tbody>tr>td {
+            padding: 0rem 1rem !important;
+        }
+    }
 }
